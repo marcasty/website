@@ -27,7 +27,7 @@ export const RESUME_DATA = {
   about:
     "electrical engineer trying to build a new electric grid",
   summary:
-    "I know how to build LLM applications with agentive behavior, state-of-the-art information retrieval (RAG) systems, and fine-tuning. I'm using these techniques to identify the optimal land for building powerplants by making all of the land in America queryable. We'll build tiny grids to support the energy demands of the future.",
+    "I'm Mark. I enjoy making sense of complex systems and doing craftsman's work. Lately, I've been focusing on building LLM web applications, but in the past I've deeply explored machine learning for structural biology, computational genomics, and computer architecture.",
   avatarUrl: "https://avatars.githubusercontent.com/u/86732961?v=4",
   personalWebsiteUrl: "",
   contact: {
@@ -46,7 +46,7 @@ export const RESUME_DATA = {
       },
       {
         name: "X",
-        url: "https://x.com/BartoszJarocki",
+        url: "https://twitter.com/markycasty",
         icon: XIcon,
       },
     ],
@@ -90,24 +90,42 @@ export const RESUME_DATA = {
     },
     
   ],
-  skills: [
-    "Python",
-    "Pytorch",
-    "Postgresql",
-    "FastAPI",
-    "React",
-    "Typescript",
-    "Verilog",
-    "R",
-    "Bash"
+  research: [
+    {
+      title: "Learning Atomic Models of Dynamic Protein Complexes: Benchmarking and Challenges",
+      techStack: [
+        "Python",
+        "PyTorch",
+        "Bash/Slurm",
+        "ChimeraX"
+      ],
+      description: "Advised by [Ellen Zhong](https://www.cs.princeton.edu/~zhonge/), PI of the [DRGN Lab](https://ezlab.princeton.edu/). Used Cryo-DRGN and ModelAngelo to automate the construction of atomic models of large, dynamic protein complexes from cryo-EM data.",
+      logo: ConsultlyLogo,
+      link: {
+        label: "Master's Thesis",
+        href: "https://drive.google.com/file/d/1BGOo9woumWeGQBF4x2GJ7nsM4zJKbDA2/view?usp=sharing",
+      },
+    },
+    {
+      title: "Network Boosting to Uncover Local Areas of Function in Single Cell Transcriptomic Data",
+      techStack: [
+        "R",
+        "Python"
+      ],
+      description: "Advised by [Claire McWhite](https://clairemcwhite.github.io/), in the [Akey Lab](https://akeylab.princeton.edu/). ",
+      logo: ConsultlyLogo,
+      link: {
+        label: "Senior Thesis",
+        href: "https://drive.google.com/file/d/1T06JKlcMqKBDcOtrjWlbfeRVPTVEpR-A/view?usp=drive_link",
+      },
+    }
   ],
   projects: [
     {
       title: "ProteinBind",
       techStack: [
-        "Hackathon Project",
         "Python",
-        "Pytorch",
+        "PyTorch",
         "Gradio",
       ],
       description: "First Place and Impact Prize in BioxML Hackathon by Lux Capital and HuggingFace. ImageBind but for Proteins. Unified amino acid sequence, MSA, 3D structure, DNA sequence, and GO Terms to make better embeddings",
@@ -128,5 +146,16 @@ export const RESUME_DATA = {
         href: "https://monito.dev/",
       },
     },
+  ],
+  skills: [
+    "Python",
+    "Pytorch",
+    "Postgresql",
+    "FastAPI",
+    "React",
+    "Typescript",
+    "Verilog",
+    "R",
+    "Bash"
   ],
 } as const;
