@@ -25,7 +25,7 @@ export const RESUME_DATA = {
   location: "New York, New York",
   locationLink: "https://maps.app.goo.gl/77jY6TeHCP89Dr8A8",
   about:
-    "electrical engineer trying to build a new electric grid",
+    "engineer",
   summary:
     "I'm Mark. I enjoy making sense of complex systems and doing craftsman's work. Lately, I've been focusing on building LLM web applications, but in the past I've deeply explored machine learning for structural biology, computational genomics, and computer architecture.",
   avatarUrl: "https://avatars.githubusercontent.com/u/86732961?v=4",
@@ -99,7 +99,11 @@ export const RESUME_DATA = {
         "Bash/Slurm",
         "ChimeraX"
       ],
-      description: "Advised by [Ellen Zhong](https://www.cs.princeton.edu/~zhonge/), PI of the [DRGN Lab](https://ezlab.princeton.edu/). Used Cryo-DRGN and ModelAngelo to automate the construction of atomic models of large, dynamic protein complexes from cryo-EM data.",
+      description: (
+        <>
+          Advised by <a href="https://www.cs.princeton.edu/~zhonge/">Ellen Zhong</a>, PI of the <a href="https://ezlab.princeton.edu/">DRGN Lab</a>. Used Cryo-DRGN and ModelAngelo to automate the construction of atomic models of large, dynamic protein complexes from cryo-EM data.
+        </>
+      ),
       logo: ConsultlyLogo,
       link: {
         label: "Master's Thesis",
@@ -112,7 +116,11 @@ export const RESUME_DATA = {
         "R",
         "Python"
       ],
-      description: "Advised by [Claire McWhite](https://clairemcwhite.github.io/), in the [Akey Lab](https://akeylab.princeton.edu/). ",
+      description: (
+        <>
+          Advised by <a href="https://clairemcwhite.github.io/">Claire McWhite</a>, in the <a href="https://akeylab.princeton.edu/">Akey Lab</a>.
+        </>
+      ),
       logo: ConsultlyLogo,
       link: {
         label: "Senior Thesis",
