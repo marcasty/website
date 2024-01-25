@@ -101,7 +101,7 @@ export const RESUME_DATA = {
       ],
       description: (
         <>
-          Advised by <a href="https://www.cs.princeton.edu/~zhonge/">Ellen Zhong</a>, PI of the <a href="https://ezlab.princeton.edu/">DRGN Lab</a>. Used Cryo-DRGN and ModelAngelo to automate the construction of atomic models of large, dynamic protein complexes from cryo-EM data.
+          Advised by <a href="https://www.cs.princeton.edu/~zhonge/"style={{ textDecoration: 'underline' }}>Ellen Zhong</a>, PI of the <a href="https://ezlab.princeton.edu/"style={{ textDecoration: 'underline' }}>DRGN Lab</a>. Used Cryo-DRGN and ModelAngelo to automate the construction of atomic models of large, dynamic protein complexes from cryo-EM data.
         </>
       ),
       logo: ConsultlyLogo,
@@ -118,7 +118,7 @@ export const RESUME_DATA = {
       ],
       description: (
         <>
-          Advised by <a href="https://clairemcwhite.github.io/">Claire McWhite</a>, in the <a href="https://akeylab.princeton.edu/">Akey Lab</a>.
+          Advised by <a href="https://clairemcwhite.github.io/"style={{ textDecoration: 'underline' }}>Claire McWhite</a>, in the <a href="https://akeylab.princeton.edu/"style={{ textDecoration: 'underline' }}>Akey Lab</a>.
         </>
       ),
       logo: ConsultlyLogo,

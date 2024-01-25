@@ -96,7 +96,7 @@ export default function Page() {
         <Section>
           <h2 className="text-xl font-bold">About</h2>
           <p className="text-pretty font-mono text-sm text-muted-foreground">
-            {RESUME_DATA.summary}
+            {RESUME_DATA.summary} Check out my <a href ="https://remarkable-olivine-b89.notion.site/Blog-920ae53cfe314fd7acfeb0c3a6b070b7?pvs=4"style={{ textDecoration: 'underline' }}>blog</a>
           </p>
         </Section>
         <Section>
