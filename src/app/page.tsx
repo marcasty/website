@@ -101,12 +101,11 @@ export default function Page() {
         <Section>
           <h2 className="text-xl font-bold">Writing</h2>
           <div className="text-pretty font-mono space-y-2">
-            {RESUME_DATA.writing.map((blog) => (
-              <BlogEntry title={blog.title} url={blog.url} />
+            {RESUME_DATA.writing.map((blog, index) => (
+              <BlogEntry key={index} title={blog.title} url={blog.url} />
             ))}
           </div>
         </Section>
-
         {/* <Section>
           <h2 className="text-xl font-bold">Work Experience</h2>
           {RESUME_DATA.work.map((work) => {
