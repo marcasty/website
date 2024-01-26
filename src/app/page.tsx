@@ -9,6 +9,8 @@ import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
 import { ResearchCard } from "@/components/research-card";
+import { BlogEntry } from "@/components/BlogEntry";
+
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
@@ -22,9 +24,6 @@ export default function Page() {
         <div className="flex items-center justify-between">
           <div className="flex-1 space-y-1.5">
             <h1 className="text-2xl font-bold">{RESUME_DATA.name}</h1>
-            <p className="max-w-md text-pretty font-mono text-sm text-muted-foreground">
-              {RESUME_DATA.about}
-            </p>
             <p className="max-w-md items-center text-pretty font-mono text-xs text-muted-foreground">
               <a
                 className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
@@ -96,10 +95,19 @@ export default function Page() {
         <Section>
           <h2 className="text-xl font-bold">About</h2>
           <p className="text-pretty font-mono text-sm text-muted-foreground">
-            {RESUME_DATA.summary} Check out my <a href ="https://remarkable-olivine-b89.notion.site/Blog-920ae53cfe314fd7acfeb0c3a6b070b7?pvs=4"style={{ textDecoration: 'underline' }}>blog</a>
+            {RESUME_DATA.summary}
           </p>
         </Section>
         <Section>
+          <h2 className="text-xl font-bold">Writing</h2>
+          <div className="text-pretty font-mono space-y-2">
+            {RESUME_DATA.writing.map((blog) => (
+              <BlogEntry title={blog.title} url={blog.url} />
+            ))}
+          </div>
+        </Section>
+
+        {/* <Section>
           <h2 className="text-xl font-bold">Work Experience</h2>
           {RESUME_DATA.work.map((work) => {
             return (
@@ -198,7 +206,7 @@ export default function Page() {
               return <Badge key={skill}>{skill}</Badge>;
             })}
           </div>
-        </Section>
+        </Section> */}
       </section>
 
       <CommandMenu

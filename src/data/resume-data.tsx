@@ -17,7 +17,7 @@ import {
   TastyCloudLogo,
   YearProgressLogo,
 } from "@/images/logos";
-import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { GitHubIcon, LinkedInIcon, XIcon, BlogIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
   name: "Mark Castellano",
@@ -27,7 +27,7 @@ export const RESUME_DATA = {
   about:
     "engineer",
   summary:
-    "I'm Mark. I enjoy making sense of complex systems and doing craftsman's work. Lately, I've been focusing on building LLM web applications, but in the past I've deeply explored machine learning for structural biology, computational genomics, and computer architecture.",
+    "I'm the founder of tinygrid. We're redesigning the way we produce and consume electricity to meet the demands of a techno-optimist future. We will drive the marginal cost of energy to 0. \n\n Before this, I was researching deep learning methods for constructing atomic models of large, dynamic protein complexes from cryo-EM data. Before that, I was doing research on novel scRNA-seq analysis methods and was part of a clinical effort to assess the effects of a novel class of cancer therapeutics. \n\n I care about building intelligence, individual soverignity, making complex systems seem elegant, finding the next S-curve, and acquiring power over nature. I enjoy doing all kinds of craftsman's work.",
   avatarUrl: "https://avatars.githubusercontent.com/u/86732961?v=4",
   personalWebsiteUrl: "",
   contact: {
@@ -51,6 +51,13 @@ export const RESUME_DATA = {
       },
     ],
   },
+  writing: [
+    {
+      title: "love what you do",
+      url: "https://remarkable-olivine-b89.notion.site/Love-what-you-Do-9afa39c0116f47d58587cc3f9fcf7537?pvs=74",
+    }
+  ],
+
   education: [
     {
       school: "Princeton Universty",
